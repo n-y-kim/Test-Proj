@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C3C53CEF42179184823300E /* Pods_BottomSheetTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60933AD6D4E08FE2B493F4D9 /* Pods_BottomSheetTest.framework */; };
 		5B7853D626CD409C0022787D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7853D526CD409C0022787D /* AppDelegate.swift */; };
 		5B7853D826CD409C0022787D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7853D726CD409C0022787D /* SceneDelegate.swift */; };
 		5B7853DA26CD409C0022787D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7853D926CD409C0022787D /* ViewController.swift */; };
@@ -16,9 +17,13 @@
 		5B7853EA26CD4ADC0022787D /* SwipeableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7853E926CD4ADC0022787D /* SwipeableView.swift */; };
 		5B7853EC26CD4B070022787D /* SwipeableItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7853EB26CD4B070022787D /* SwipeableItems.swift */; };
 		5B7853EE26CD4D830022787D /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7853ED26CD4D830022787D /* ChildViewController.swift */; };
+		5B7853F126CD677B0022787D /* CocoapodBottom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7853F026CD677B0022787D /* CocoapodBottom.storyboard */; };
+		5B7853F426CD67AC0022787D /* CBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7853F326CD67AC0022787D /* CBViewController.swift */; };
+		5B7853F626CD68030022787D /* CBTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7853F526CD68030022787D /* CBTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E6D06D25DC5E88EF44B0309 /* Pods-BottomSheetTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BottomSheetTest.release.xcconfig"; path = "Target Support Files/Pods-BottomSheetTest/Pods-BottomSheetTest.release.xcconfig"; sourceTree = "<group>"; };
 		5B7853D226CD409C0022787D /* BottomSheetTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BottomSheetTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7853D526CD409C0022787D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B7853D726CD409C0022787D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +35,11 @@
 		5B7853E926CD4ADC0022787D /* SwipeableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableView.swift; sourceTree = "<group>"; };
 		5B7853EB26CD4B070022787D /* SwipeableItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableItems.swift; sourceTree = "<group>"; };
 		5B7853ED26CD4D830022787D /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
+		5B7853F026CD677B0022787D /* CocoapodBottom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CocoapodBottom.storyboard; sourceTree = "<group>"; };
+		5B7853F326CD67AC0022787D /* CBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBViewController.swift; sourceTree = "<group>"; };
+		5B7853F526CD68030022787D /* CBTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBTableViewController.swift; sourceTree = "<group>"; };
+		60933AD6D4E08FE2B493F4D9 /* Pods_BottomSheetTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BottomSheetTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1AA7482412FA54769D4E142 /* Pods-BottomSheetTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BottomSheetTest.debug.xcconfig"; path = "Target Support Files/Pods-BottomSheetTest/Pods-BottomSheetTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C3C53CEF42179184823300E /* Pods_BottomSheetTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,8 +57,11 @@
 		5B7853C926CD409C0022787D = {
 			isa = PBXGroup;
 			children = (
+				5B7853F226CD678B0022787D /* CocoapodBottom */,
 				5B7853D426CD409C0022787D /* BottomSheetTest */,
 				5B7853D326CD409C0022787D /* Products */,
+				891D630CB4E56181FBB0F38A /* Pods */,
+				A415E0328EC6D3EF71480B4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +98,34 @@
 			path = Swipeable;
 			sourceTree = "<group>";
 		};
+		5B7853F226CD678B0022787D /* CocoapodBottom */ = {
+			isa = PBXGroup;
+			children = (
+				5B7853F026CD677B0022787D /* CocoapodBottom.storyboard */,
+				5B7853F326CD67AC0022787D /* CBViewController.swift */,
+				5B7853F526CD68030022787D /* CBTableViewController.swift */,
+			);
+			path = CocoapodBottom;
+			sourceTree = "<group>";
+		};
+		891D630CB4E56181FBB0F38A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1AA7482412FA54769D4E142 /* Pods-BottomSheetTest.debug.xcconfig */,
+				4E6D06D25DC5E88EF44B0309 /* Pods-BottomSheetTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A415E0328EC6D3EF71480B4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60933AD6D4E08FE2B493F4D9 /* Pods_BottomSheetTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B7853E626CD409F0022787D /* Build configuration list for PBXNativeTarget "BottomSheetTest" */;
 			buildPhases = (
+				8BEE2B7BEE69A12F5028AC27 /* [CP] Check Pods Manifest.lock */,
 				5B7853CE26CD409C0022787D /* Sources */,
 				5B7853CF26CD409C0022787D /* Frameworks */,
 				5B7853D026CD409C0022787D /* Resources */,
+				5240DC3F48CFE319B7083FC2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B7853E226CD409F0022787D /* LaunchScreen.storyboard in Resources */,
+				5B7853F126CD677B0022787D /* CocoapodBottom.storyboard in Resources */,
 				5B7853DF26CD409F0022787D /* Assets.xcassets in Resources */,
 				5B7853DD26CD409C0022787D /* Main.storyboard in Resources */,
 			);
@@ -149,12 +194,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5240DC3F48CFE319B7083FC2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BottomSheetTest/Pods-BottomSheetTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BottomSheetTest/Pods-BottomSheetTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BottomSheetTest/Pods-BottomSheetTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BEE2B7BEE69A12F5028AC27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BottomSheetTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5B7853CE26CD409C0022787D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B7853F426CD67AC0022787D /* CBViewController.swift in Sources */,
 				5B7853DA26CD409C0022787D /* ViewController.swift in Sources */,
+				5B7853F626CD68030022787D /* CBTableViewController.swift in Sources */,
 				5B7853EC26CD4B070022787D /* SwipeableItems.swift in Sources */,
 				5B7853EA26CD4ADC0022787D /* SwipeableView.swift in Sources */,
 				5B7853D626CD409C0022787D /* AppDelegate.swift in Sources */,
@@ -303,6 +392,7 @@
 		};
 		5B7853E726CD409F0022787D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1AA7482412FA54769D4E142 /* Pods-BottomSheetTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,6 +412,7 @@
 		};
 		5B7853E826CD409F0022787D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E6D06D25DC5E88EF44B0309 /* Pods-BottomSheetTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
