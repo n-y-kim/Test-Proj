@@ -1,1 +1,1 @@
-# Map-Test
+# Test projects for blogging & mentoring
