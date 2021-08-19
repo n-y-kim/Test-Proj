@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="CBViewController" customModule="BottomSheetTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yM8-yb-zQ2">
+                                <rect key="frame" x="168.5" y="433" width="77" height="30"/>
+                                <state key="normal" title="맵 내 핀 클릭"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RVS-4V-n7z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yM8-yb-zQ2" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="BQ9-lB-Sps"/>
+                            <constraint firstItem="yM8-yb-zQ2" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="PC8-12-00f"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-200.00000000000003" y="12.723214285714285"/>
+        </scene>
+        <!--Bottom View Controller-->
+        <scene sceneID="Gz2-Mv-aGk">
+            <objects>
+                <viewController storyboardIdentifier="BottomVC" title="Child View Controller" id="NE5-ps-Vuu" userLabel="Bottom View Controller" customClass="CBTableViewController" customModule="BottomSheetTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lJp-ko-VDc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yya-2d-u5w">
+                                <rect key="frame" x="31" y="44" width="351.5" height="86.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="170" translatesAutoresizingMaskIntoConstraints="NO" id="Nnd-Fc-MZq">
+                                        <rect key="frame" x="0.0" y="0.0" width="351.5" height="38.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="장소이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZv-gb-xdC">
+                                                <rect key="frame" x="0.0" y="0.0" width="111" height="38.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="길 찾기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZS-7c-Ssc">
+                                                <rect key="frame" x="281" y="0.0" width="70.5" height="38.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" name="AccentColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="IRI-ol-UR4">
+                                        <rect key="frame" x="0.0" y="55.5" width="351.5" height="32"/>
+                                        <segments>
+                                            <segment title="공유"/>
+                                            <segment title="전화번호"/>
+                                            <segment title="즐겨찾기"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Ic-Vr-Bnz">
+                                <rect key="frame" x="32" y="163" width="351.5" height="86.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="170" translatesAutoresizingMaskIntoConstraints="NO" id="wbB-vh-Pxj">
+                                        <rect key="frame" x="0.0" y="0.0" width="351.5" height="38.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="장소이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSg-N6-Mga">
+                                                <rect key="frame" x="0.0" y="0.0" width="111" height="38.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="길 찾기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiO-2M-5fv">
+                                                <rect key="frame" x="281" y="0.0" width="70.5" height="38.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" name="AccentColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6XY-Rn-AVf">
+                                        <rect key="frame" x="0.0" y="55.5" width="351.5" height="32"/>
+                                        <segments>
+                                            <segment title="공유"/>
+                                            <segment title="전화번호"/>
+                                            <segment title="즐겨찾기"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Ap-wZ-0ua">
+                                <rect key="frame" x="31" y="276" width="351.5" height="86.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="170" translatesAutoresizingMaskIntoConstraints="NO" id="cKM-0c-Ssp">
+                                        <rect key="frame" x="0.0" y="0.0" width="351.5" height="38.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="장소이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDU-BG-SBr">
+                                                <rect key="frame" x="0.0" y="0.0" width="111" height="38.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="길 찾기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S14-03-7P1">
+                                                <rect key="frame" x="281" y="0.0" width="70.5" height="38.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" name="AccentColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qyv-87-GpS">
+                                        <rect key="frame" x="0.0" y="55.5" width="351.5" height="32"/>
+                                        <segments>
+                                            <segment title="공유"/>
+                                            <segment title="전화번호"/>
+                                            <segment title="즐겨찾기"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="TlP-7P-Wg1">
+                                <rect key="frame" x="32" y="391" width="351.5" height="86.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="170" translatesAutoresizingMaskIntoConstraints="NO" id="TFf-x2-MNu">
+                                        <rect key="frame" x="0.0" y="0.0" width="351.5" height="38.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="장소이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0XF-X4-ieh">
+                                                <rect key="frame" x="0.0" y="0.0" width="111" height="38.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="길 찾기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kY-z2-1Hg">
+                                                <rect key="frame" x="281" y="0.0" width="70.5" height="38.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" name="AccentColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fiT-lG-9j0">
+                                        <rect key="frame" x="0.0" y="55.5" width="351.5" height="32"/>
+                                        <segments>
+                                            <segment title="공유"/>
+                                            <segment title="전화번호"/>
+                                            <segment title="즐겨찾기"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pam-lV-7e0">
+                                <rect key="frame" x="32" y="504" width="351.5" height="86.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="170" translatesAutoresizingMaskIntoConstraints="NO" id="t3M-8l-wag">
+                                        <rect key="frame" x="0.0" y="0.0" width="351.5" height="38.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="장소이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SW7-gz-NLQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="111" height="38.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="길 찾기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZo-WX-S49">
+                                                <rect key="frame" x="281" y="0.0" width="70.5" height="38.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" name="AccentColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Iiu-Cu-XTc">
+                                        <rect key="frame" x="0.0" y="55.5" width="351.5" height="32"/>
+                                        <segments>
+                                            <segment title="공유"/>
+                                            <segment title="전화번호"/>
+                                            <segment title="즐겨찾기"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LxL-vI-J3O"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LxL-vI-J3O" firstAttribute="trailing" secondItem="Yya-2d-u5w" secondAttribute="trailing" constant="31.5" id="0kY-cL-gI7"/>
+                            <constraint firstItem="Pam-lV-7e0" firstAttribute="top" secondItem="TlP-7P-Wg1" secondAttribute="bottom" constant="26.5" id="1Dd-Pp-aLR"/>
+                            <constraint firstItem="Yya-2d-u5w" firstAttribute="leading" secondItem="LxL-vI-J3O" secondAttribute="leading" constant="31" id="74y-fJ-Lnh"/>
+                            <constraint firstItem="TlP-7P-Wg1" firstAttribute="top" secondItem="7Ap-wZ-0ua" secondAttribute="bottom" constant="28.5" id="8j8-dT-qvO"/>
+                            <constraint firstItem="Pam-lV-7e0" firstAttribute="leading" secondItem="LxL-vI-J3O" secondAttribute="leading" constant="32" id="BtM-0h-ZzY"/>
+                            <constraint firstItem="LxL-vI-J3O" firstAttribute="trailing" secondItem="Pam-lV-7e0" secondAttribute="trailing" constant="30.5" id="IF3-1u-cHu"/>
+                            <constraint firstItem="8Ic-Vr-Bnz" firstAttribute="leading" secondItem="LxL-vI-J3O" secondAttribute="leading" constant="32" id="Olx-LG-dr4"/>
+                            <constraint firstItem="Yya-2d-u5w" firstAttribute="top" secondItem="LxL-vI-J3O" secondAttribute="top" id="Psf-9m-Gv4"/>
+                            <constraint firstItem="LxL-vI-J3O" firstAttribute="trailing" secondItem="TlP-7P-Wg1" secondAttribute="trailing" constant="30.5" id="RRy-Xl-pSj"/>
+                            <constraint firstItem="LxL-vI-J3O" firstAttribute="trailing" secondItem="8Ic-Vr-Bnz" secondAttribute="trailing" constant="30.5" id="ULH-nr-NoV"/>
+                            <constraint firstItem="LxL-vI-J3O" firstAttribute="trailing" secondItem="7Ap-wZ-0ua" secondAttribute="trailing" constant="31.5" id="VA5-f8-wbu"/>
+                            <constraint firstItem="7Ap-wZ-0ua" firstAttribute="top" secondItem="8Ic-Vr-Bnz" secondAttribute="bottom" constant="26.5" id="YdP-mc-xgM"/>
+                            <constraint firstItem="8Ic-Vr-Bnz" firstAttribute="top" secondItem="Yya-2d-u5w" secondAttribute="bottom" constant="32.5" id="cMH-aI-MvO"/>
+                            <constraint firstItem="7Ap-wZ-0ua" firstAttribute="leading" secondItem="LxL-vI-J3O" secondAttribute="leading" constant="31" id="eEZ-sG-AAE"/>
+                            <constraint firstItem="TlP-7P-Wg1" firstAttribute="leading" secondItem="LxL-vI-J3O" secondAttribute="leading" constant="32" id="iAb-qe-V1S"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cnX-Ej-uhy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="508.69565217391306" y="12.723214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

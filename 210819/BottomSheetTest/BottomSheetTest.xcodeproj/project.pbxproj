@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -57,7 +57,6 @@
 		5B7853C926CD409C0022787D = {
 			isa = PBXGroup;
 			children = (
-				5B7853F226CD678B0022787D /* CocoapodBottom */,
 				5B7853D426CD409C0022787D /* BottomSheetTest */,
 				5B7853D326CD409C0022787D /* Products */,
 				891D630CB4E56181FBB0F38A /* Pods */,
@@ -76,9 +75,11 @@
 		5B7853D426CD409C0022787D /* BottomSheetTest */ = {
 			isa = PBXGroup;
 			children = (
+				5B7853F226CD678B0022787D /* CocoapodBottom */,
 				5B7853EF26CD4D9F0022787D /* Swipeable */,
 				5B7853D526CD409C0022787D /* AppDelegate.swift */,
 				5B7853D726CD409C0022787D /* SceneDelegate.swift */,
+				5B7853F026CD677B0022787D /* CocoapodBottom.storyboard */,
 				5B7853DB26CD409C0022787D /* Main.storyboard */,
 				5B7853D926CD409C0022787D /* ViewController.swift */,
 				5B7853ED26CD4D830022787D /* ChildViewController.swift */,
@@ -101,7 +102,6 @@
 		5B7853F226CD678B0022787D /* CocoapodBottom */ = {
 			isa = PBXGroup;
 			children = (
-				5B7853F026CD677B0022787D /* CocoapodBottom.storyboard */,
 				5B7853F326CD67AC0022787D /* CBViewController.swift */,
 				5B7853F526CD68030022787D /* CBTableViewController.swift */,
 			);
@@ -114,7 +114,6 @@
 				C1AA7482412FA54769D4E142 /* Pods-BottomSheetTest.debug.xcconfig */,
 				4E6D06D25DC5E88EF44B0309 /* Pods-BottomSheetTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
