@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90p-tS-YM6" customClass="SwipeableView" customModule="BottomSheetTest" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="626" width="414" height="270"/>
+                                <rect key="frame" x="0.0" y="632" width="414" height="264"/>
                                 <color key="backgroundColor" red="0.85961114900000002" green="0.85961114900000002" blue="0.85961114900000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Iqu-sp-TZz">
@@ -28,22 +28,35 @@
                                     <segment title="Second"/>
                                 </segments>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIS-JB-vop">
+                                <rect key="frame" x="134" y="261" width="147" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="map picker"/>
+                                <connections>
+                                    <action selector="pickerSelected:" destination="LUF-8T-DRX" eventType="touchUpInside" id="9dN-WM-nfd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YAi-IX-UNd"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
                             <constraint firstItem="Iqu-sp-TZz" firstAttribute="top" secondItem="YAi-IX-UNd" secondAttribute="top" constant="46" id="294-r4-wQk"/>
-                            <constraint firstItem="90p-tS-YM6" firstAttribute="top" secondItem="Iqu-sp-TZz" secondAttribute="bottom" constant="505" id="8BZ-7z-5m1"/>
+                            <constraint firstItem="90p-tS-YM6" firstAttribute="top" secondItem="TIS-JB-vop" secondAttribute="bottom" constant="335" id="8BZ-7z-5m1"/>
                             <constraint firstItem="90p-tS-YM6" firstAttribute="leading" secondItem="YAi-IX-UNd" secondAttribute="leading" id="8Gt-uc-E0d"/>
+                            <constraint firstItem="TIS-JB-vop" firstAttribute="leading" secondItem="YAi-IX-UNd" secondAttribute="leading" constant="134" id="8lq-xC-CRr"/>
+                            <constraint firstItem="YAi-IX-UNd" firstAttribute="trailing" secondItem="TIS-JB-vop" secondAttribute="trailing" constant="133" id="9gc-jI-rFc"/>
                             <constraint firstItem="Iqu-sp-TZz" firstAttribute="leading" secondItem="YAi-IX-UNd" secondAttribute="leading" constant="20" id="Ck9-DE-zXa"/>
                             <constraint firstItem="YAi-IX-UNd" firstAttribute="trailing" secondItem="Iqu-sp-TZz" secondAttribute="trailing" constant="20" id="Fa9-0p-xxX"/>
                             <constraint firstItem="90p-tS-YM6" firstAttribute="bottom" secondItem="YAi-IX-UNd" secondAttribute="bottom" constant="34" id="HN1-Qg-VpD"/>
                             <constraint firstItem="90p-tS-YM6" firstAttribute="trailing" secondItem="YAi-IX-UNd" secondAttribute="trailing" id="VaP-dF-mg2"/>
+                            <constraint firstItem="TIS-JB-vop" firstAttribute="top" secondItem="Iqu-sp-TZz" secondAttribute="bottom" constant="140" id="cag-AH-2Wb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Jvv-UJ-L3D"/>
                     <connections>
                         <outlet property="flexLayout" destination="8BZ-7z-5m1" id="Um5-Xk-kUk"/>
+                        <outlet property="picker" destination="TIS-JB-vop" id="8hs-Du-piX"/>
+                        <outlet property="pickerFlexLayout" destination="cag-AH-2Wb" id="r0F-mv-qn3"/>
                         <outlet property="swipeView" destination="90p-tS-YM6" id="lPj-hB-JNb"/>
                     </connections>
                 </viewController>

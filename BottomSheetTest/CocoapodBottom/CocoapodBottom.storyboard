@@ -15,13 +15,23 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yM8-yb-zQ2">
+                                <rect key="frame" x="168.5" y="433" width="77" height="30"/>
+                                <state key="normal" title="맵 내 핀 클릭"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yM8-yb-zQ2" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="BQ9-lB-Sps"/>
+                            <constraint firstItem="yM8-yb-zQ2" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="PC8-12-00f"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-200" y="13"/>
+            <point key="canvasLocation" x="-200.00000000000003" y="12.723214285714285"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ktx-rd-jJv">
