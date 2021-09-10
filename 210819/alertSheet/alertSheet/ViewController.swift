@@ -28,7 +28,9 @@ class ViewController: UIViewController {
             (ACTION) in self.changeLabel()
         }
         
-        let select2 = UIAlertAction(title: "선택2", style: .default, handler: nil)
+        let select2 = UIAlertAction(title: "선택2", style: .default){
+            (ACTION) in self.changeLabel()
+        }
         
         let cancel = UIAlertAction(title: "취소", style: .cancel, handler: nil)
 

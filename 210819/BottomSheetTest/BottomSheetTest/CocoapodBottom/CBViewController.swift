@@ -22,7 +22,11 @@ class CBViewController: UIViewController {
         // MDC 바텀 시트로 설정
         let bottomSheet: MDCBottomSheetController = MDCBottomSheetController(contentViewController: vc)
         
-        //bottomSheet.mdc_bottomSheetPresentationController?.preferredSheetHeight = 200
+        //높이
+        bottomSheet.mdc_bottomSheetPresentationController?.preferredSheetHeight = 200
+        
+        //못 내려가게 막기
+        bottomSheet.dismissOnDraggingDownSheet = false
         
         bottomSheet.adjustHeightForSafeAreaInsets = true
         // 보여주기
